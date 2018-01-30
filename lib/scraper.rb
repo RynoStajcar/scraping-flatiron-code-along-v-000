@@ -30,7 +30,6 @@ class Scraper
     course = Course.new
     binding.pry
     course.title = post.css("h2").text
-    course.schedule =
     end
   end
 
