@@ -29,7 +29,7 @@ class Scraper
 
   def make_courses
     new_course = []
-    get_courses.collect do |course|
+    get_courses.each do |course|
     course = Course.new
     course.title = post.css("h2").text
 
