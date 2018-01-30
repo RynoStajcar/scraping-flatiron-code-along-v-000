@@ -30,9 +30,9 @@ class Scraper
   def make_courses
     new_course = []
     get_courses.collect do |course|
-    new_course << course.text
+    course.text
     end
-    new_course = Course.new
+  
   end
 
 end
