@@ -32,7 +32,6 @@ class Scraper
     get_courses.collect do |course|
     course.text.to_s
     end
-
   end
 
 end
