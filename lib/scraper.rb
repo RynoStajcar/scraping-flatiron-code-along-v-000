@@ -27,4 +27,10 @@ class Scraper
     doc.css(".post")
   end
 
+  def make_courses
+    get_courses.collect do |course|
+      course = Course.new
+    end
+  end
+
 end
