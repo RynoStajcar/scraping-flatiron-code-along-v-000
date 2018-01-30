@@ -31,8 +31,8 @@ class Scraper
     new_course = []
     get_courses.collect do |course|
     new_course << course.text
-    new_course
     end
+    new_course
   end
 
 end
