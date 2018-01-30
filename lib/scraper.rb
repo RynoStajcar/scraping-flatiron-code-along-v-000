@@ -30,8 +30,7 @@ class Scraper
   def make_courses
     new_course = []
     get_courses.collect do |course|
-      binding.pry
-    course.text
+    course.text.to_s
     end
 
   end
