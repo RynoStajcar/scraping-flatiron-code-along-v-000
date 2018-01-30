@@ -28,7 +28,7 @@ class Scraper
   end
 
   def make_courses
-    get_courses.collect do |course|
+    get_courses.text.collect do |course|
       binding.pry
       course = Course.new
     end
