@@ -22,14 +22,13 @@ class Scraper
   end
 
   def get_courses
-    self.get_page.css(".post")
+    get_page.css(".post")
   end
 
   def make_courses
-    self.get_courses.each do |course|
-      binding.pry
-    course = Course.new
-    course.title = get_courses.css("h2").text
+    get_courses.each do |post|
+      course = Course.new
+      course.title = post.css("h2").text
     end
   end
 
