@@ -31,7 +31,7 @@ class Scraper
     new_course = []
     get_courses.collect do |course|
     course = Course.new
-    course.title = course.css(".h2").text
+    course.title = post.css("h2").text
 
     end
   end
